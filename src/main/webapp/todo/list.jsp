@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: jieunlee
@@ -11,6 +12,11 @@
     <title>목록</title>
 </head>
 <body>
-
+    <h1>Todo List</h1>
+<ul>
+    <c:forEach var="dto" items="${dtoList}">
+        <li><a href="http://localhost:8070/todo/read?id=${dto.getId()}">${dto.getId()}</a> ... ${dto.title} ... ${dto.finished == true ? "DONE" : "NOT YET"}</li>
+    </c:forEach>
+</ul>
 </body>
 </html>

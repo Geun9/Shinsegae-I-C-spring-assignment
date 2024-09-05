@@ -1,18 +1,21 @@
 package com.ssg.w1.todo.dto;
 
+import java.time.LocalDate;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
+import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-@Getter
+@Data
 @Builder
-@NoArgsConstructor
 @AllArgsConstructor
-public class Todo {
-    private int id;
+@NoArgsConstructor
+public class TodoDto {
+    private Long id;
     private String title;
-    private String dueDate;
-    private String status;
+    private LocalDate dueDate;
+    private boolean finished;
 }
 

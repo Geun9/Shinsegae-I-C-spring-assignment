@@ -1,4 +1,4 @@
-package com.ssg.springex.jdbcex;
+package com.ssg.w1.todo.dao;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;

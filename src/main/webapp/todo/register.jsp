@@ -11,6 +11,17 @@
     <title>등록</title>
 </head>
 <body>
-
+    <form action="/todo/register" method="post">
+        <div style="margin: 5px">
+            <input type="text", name="title" placeholder="INSERT TITLE" required/>
+        </div>
+        <div style="margin: 5px">
+            <input type="date", name="dueDate" required/>
+        </div>
+        <div style="margin: 5px">
+            <button type="reset">RESET</button>
+            <button type="submit">REGISTER</button>
+        </div>
+    </form>
 </body>
 </html>
